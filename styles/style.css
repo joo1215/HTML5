@@ -1,6 +1,7 @@
 @import url(./fontello.css);
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./fontello.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden {
@@ -18,10 +19,13 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 html {
   font-size: 10px;
 }
 
+=======
+>>>>>>> 8ee7b3495ddaed501906ff3515ddcf97682ee7dc
 /* 링크 스타일 */
 a {
   color: inherit;
@@ -31,14 +35,21 @@ a {
 /* 본문 스타일 */
 body {
   color: #212121;
+<<<<<<< HEAD
   font-size: 1.4rem;
+=======
+  background: #ccc;
+>>>>>>> 8ee7b3495ddaed501906ff3515ddcf97682ee7dc
   font-family: "Pretendard Variable", Pretendard, -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+<<<<<<< HEAD
   background: url("./images/bg_flower.png") no-repeat 50% 0,
     #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%)
       repeat 0 0;
+=======
+>>>>>>> 8ee7b3495ddaed501906ff3515ddcf97682ee7dc
 }
 
 /* 레이아웃 */
@@ -55,6 +66,7 @@ body {
 .header {
   background: #fff;
   padding: 0 30px;
+<<<<<<< HEAD
   border-radius: 0 0 15px 15px;
   position: relative;
 }
@@ -223,6 +235,54 @@ body {
     color: hsla(0, 0%, 0%, 1);
     transform: translate(400px, 75px);
   }
+=======
+  height: 15vh;
+  border-radius: 0 0 15px 15px;
+}
+
+.member {
+  background-color: pink;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+/* 겹침 Cascading */
+/* 우선순위 규칙 */
+/* li (Type Selector) - 1점 */
+/* .first (Class Selector) - 10점 */
+/* #item (ID Selector) - 100점 */
+
+/* .member -> 10점, li -> 1점, ::before -> 1점  => 12점  */
+/* .member li::before {
+  content: ":";
+} */
+/* .member -> 10점, .first -> 10점, ::before -> 1점  => 21점  */
+/* .member .first::before {
+  content: "첫번째 자식요소를 생성합니다.";
+} */
+/* .member li:first-child::before {
+  content: "";
+} */
+
+/* .member li:nth-child(n + 2)::before {
+  content: ":";
+  background-color: skyblue;
+} */
+
+.member li::before {
+  content: "\e800";
+  font-family: fontello;
+}
+
+.member a {
+  text-transform: uppercase;
+}
+
+/* 비주얼 */
+.visual {
+  background: orange;
+  height: 10vh;
+>>>>>>> 8ee7b3495ddaed501906ff3515ddcf97682ee7dc
 }
 
 @keyframes fadeEffect {
@@ -271,27 +331,39 @@ body {
 /* 메인 */
 .main {
   background: lightgreen;
-  height: 50vh;
-  display: flow-root;
-  padding: 0 15px;
+  border-top: 1px solid red;
+  /* min-height: 450px; */
+  position: absolute;
 }
 
 .group {
+<<<<<<< HEAD
   margin: 0 15px;
   float: left;
 }
 
+=======
+  height: 100px;
+}
+>>>>>>> 8ee7b3495ddaed501906ff3515ddcf97682ee7dc
 .group1 {
   background-color: violet;
   width: 250px;
+  float: right;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8ee7b3495ddaed501906ff3515ddcf97682ee7dc
 .group2 {
   background-color: salmon;
   width: 380px;
+  float: right;
 }
 .group3 {
   background-color: gold;
   width: 190px;
+  float: right;
 }
 
 /* 슬로건 */
@@ -302,10 +374,19 @@ body {
 }
 /* 푸터 */
 .footer {
+<<<<<<< HEAD
   background: #ccc
     linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+=======
+  background: gray;
+  width: 940px;
+  margin: 0 auto;
+>>>>>>> 8ee7b3495ddaed501906ff3515ddcf97682ee7dc
 }
 .footer-inner {
   background: silver;
   height: 15vh;
+  position: relative;
+  top: -10px;
+  left: -10px;
 }
