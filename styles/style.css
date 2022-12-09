@@ -368,14 +368,14 @@ body {
 }
 
 .sign a::before {
-  content: '\e804';
-  font-family: fonteello;
+  content: '\e802';
+  font-family: fontello;
   margin-right: 8px;
   color: orangered;
 }
+
 /* 유효성 검사 배너 */
 .validation-list {
-  background-color: yellow;
   margin-top: 25px;
 }
 
