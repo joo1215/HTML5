@@ -3,7 +3,7 @@
 @import url(./reset.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden, legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -296,10 +296,60 @@ body {
 
 /* 로그인 영역 */
 .login {
-  background: radial-gradient(circle at right top, orange, orangered);
+  background: orange radial-gradient(circle at right top, orange, orangered);
   padding: 10px;
   box-shadow: 5px 5px 0 0 #ccc ;
   border-radius: 5px;
+}
+
+.login-title {
+  color: #ff0;
+  font-size: 15px;
+  font-weight: 700;
+  text-indent: 10px;
+}
+
+.login-form {
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+
+.login-form fieldset {
+  position: relative;
+}
+
+.user-email {
+  background-color: aqua;
+}
+
+.user-pw {
+  background-color: lime;
+}
+
+.login-form label {
+  background-color: salmon;
+  display: inline-block;
+  width: 4em;
+}
+
+.login-form input {
+  width: 90px;
+  height: 24px;
+  border: 1px solid #aaa;
+}
+
+.login-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sign {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 0 10px 10px 10px;
 }
 
 /* 슬로건 */
