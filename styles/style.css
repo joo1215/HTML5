@@ -418,7 +418,8 @@ body {
   display: flow-root;
 }
 
-.term-list-subject, .term-list-breif {
+.term-list-subject,
+.term-list-brief {
   float: right;
   width: 145px;
 }
@@ -436,12 +437,13 @@ body {
   vertical-align: middle;
 }
 
-.term-list-breif {
+.term-list-brief {
   margin-top: 5px;
   line-height: 1.5;
 }
 
-.cross .term-list-subject, .cross .term-list-breif {
+.cross .term-list-subject,
+.cross .term-list-brief {
   float: left;
 }
 
